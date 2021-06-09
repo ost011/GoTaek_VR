@@ -64,5 +64,9 @@ public class PlayerBullet_B : MonoBehaviour
                 monster5.GetDamage(attackAmount);
             }
         }
+        if(other.gameObject.tag =="Shootable")
+        {
+            Destroy(gameObject);
+        }
     }
 }
