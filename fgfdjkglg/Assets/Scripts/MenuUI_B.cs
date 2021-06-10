@@ -62,7 +62,7 @@ public class MenuUI_B : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1;
-        Invoke("disappear2Sec", 2f);
+        Invoke("disappear5Sec", 2f);
         //Destroy(text, 15f);
         Invoke("appear10Sec", 10f);
         Invoke("appear15Sec", 15f);

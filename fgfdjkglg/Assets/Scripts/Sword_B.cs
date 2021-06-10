@@ -5,16 +5,16 @@ using UnityEngine;
 public class Sword_B : MonoBehaviour
 {
     public float attackAmount = 25f;
-    public AudioClip swordHit;
+    //public AudioClip swordHit;
     public AudioClip swordSwing;
     public GameObject trail;
-    AudioSource swordAudio;
+    //AudioSource swordAudio;
 
     // Start is called before the first frame update
     void Start()
     {
-        swordAudio = GetComponent<AudioSource>();
-        swordAudio.volume = 3.0f;
+        //swordAudio = GetComponent<AudioSource>();
+        //swordAudio.volume = 3.0f;
         //TrailRenderer trailrenderer = trail.GetComponent<TrailRenderer>();
     }
     private void OnTriggerEnter(Collider other)
@@ -65,12 +65,9 @@ public class Sword_B : MonoBehaviour
         //    }
         //    swordAudio.PlayOneShot(swordHit);
         //}
-        //else if (other.tag)
-        //{
-        //    if()
-        //}
+        
 
-        if(other.GetComponent<IDamage>() != null)
+        if (other.GetComponent<IDamage>() != null)
         {
             print(other.GetComponent<IDamage>());
             other.GetComponent<IDamage>().GetDamage(attackAmount);

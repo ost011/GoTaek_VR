@@ -28,7 +28,6 @@ public class MonsterCtrl_C : MonoBehaviour, IDamage
 
     public AudioClip[] clips;
     public AudioSource audioSource;
-
     [SerializeField]
     GameObject hitEffect;
     void Start()
@@ -51,8 +50,9 @@ public class MonsterCtrl_C : MonoBehaviour, IDamage
     {
         if (other.tag == "Sword")
         {
-            Sword_B sw = other.GetComponent<Sword_B>();
-            GetDamage(sw.attackAmount);
+            //Sword_B sw = other.GetComponent<Sword_B>();
+            //GetDamage(sw.attackAmount);
+            Instantiate(hitEffect, this.transform.position, this.gameObject.transform.rotation);
         }
         else if(other.tag == "Bullet_B")
         {
@@ -134,7 +134,7 @@ public class MonsterCtrl_C : MonoBehaviour, IDamage
     public void GetDamage(float amount)
     {
         hp -= (int)(amount);
-        animator.SetBool("Get Hit", true);
+        
         hpSlider.value = hp;
         Debug.Log(hpSlider.value);
         if (hp <= 0)
@@ -152,6 +152,10 @@ public class MonsterCtrl_C : MonoBehaviour, IDamage
             GameManager.Instance.Count--;
             Debug.Log(GameManager.Instance.Count);
             //Instantiate(hitEffect, this.transform.position, this.transform.rotation);
+        }
+        else
+        {
+            animator.SetTrigger("Get Hit");
         }
     }
 

@@ -36,6 +36,10 @@ public class MonsterCtrl2_C : MonoBehaviour, IDamage
         {
             Instantiate(hitEffect, other.transform.position, this.gameObject.transform.rotation);
         }
+        else if(other.tag == "Sword")
+        {
+            Instantiate(hitEffect, this.transform.position, this.gameObject.transform.rotation);
+        }
     }
     void Start()
     {
@@ -137,7 +141,7 @@ public class MonsterCtrl2_C : MonoBehaviour, IDamage
     {
         //audioSource.PlayOneShot(clips[1]);
         hp -= (int)(amount);
-        animator.SetBool("Get Hit", true);
+        //animator.SetBool("Get Hit", true);
         hpSlider.value = hp;
 
         if (hp <= 0)
@@ -155,6 +159,10 @@ public class MonsterCtrl2_C : MonoBehaviour, IDamage
             Destroy(this.gameObject, 3f);
 
             //Instantiate(hitEffect, this.transform.position, this.transform.rotation);
+        }
+        else
+        {
+            animator.SetTrigger("Get Hit");
         }
     }
 

@@ -140,7 +140,7 @@ public class MonsterCtrl5_C : MonoBehaviour, IDamage
     public void GetDamage(float amount)
     {
         hp -= (int)(amount);
-        animator.SetBool("Get Hit", true);
+        //animator.SetBool("Get Hit", true);
         hpSlider.value = hp;
 
         if (hp <= 0)
@@ -159,12 +159,20 @@ public class MonsterCtrl5_C : MonoBehaviour, IDamage
 
             //Instantiate(hitEffect, this.transform.position, this.transform.rotation);
         }
+        else
+        {
+            animator.SetTrigger("Get Hit");
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Bullet_B")
         {
             Instantiate(hitEffect, other.transform.position, this.gameObject.transform.rotation);
+        }
+        else if (other.tag == "Sword")
+        {
+            Instantiate(hitEffect, this.transform.position, this.gameObject.transform.rotation);
         }
     }
     void CreateBullet()//attackÀÏ¶§.
