@@ -20105,3 +20105,84 @@ Received Import Request.
 Start importing Assets/03Villain/02Asset/OfficeAndPoliceStation/Props/MaterialsTextures/OfficeEquipmentSet_n.tga using Guid(8e751047aff20ee4fb5c47664338b114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb7e119ce1df01d56bb569255b5871e1') in 0.025608 seconds
   Import took 0.028930 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.109268 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\DMC CONET\Documents\GitHub\VillainOst\fgfdjkglg\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\DMC CONET\Documents\GitHub\VillainOst\fgfdjkglg\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/DMC CONET/Documents/GitHub/VillainOst/fgfdjkglg/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.452 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589830) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.72 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2014 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 208.0 MB.
+System memory in use after: 208.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2670.
+Total: 3.026700 ms (FindLiveObjects: 0.211000 ms CreateObjectMapping: 0.072600 ms MarkObjects: 1.835700 ms  DeleteObjects: 0.906400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 5937.508053 seconds.
+  path: Assets/03Villain/02Asset/Cartoon_City_Mega-Pack/scenes/City_scene_summer123.unity
+  artifactKey: Guid(42ae40064f906f149a05bd8f83a14364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03Villain/02Asset/Cartoon_City_Mega-Pack/scenes/City_scene_summer123.unity using Guid(42ae40064f906f149a05bd8f83a14364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da09d174be59b3c3f83220481bf96544') in 0.029411 seconds
+  Import took 0.034569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.770740 seconds.
+  path: Assets/03Villain/02Asset/Cartoon_City_Mega-Pack/scenes/City_scene_summer123.unity
+  artifactKey: Guid(42ae40064f906f149a05bd8f83a14364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03Villain/02Asset/Cartoon_City_Mega-Pack/scenes/City_scene_summer123.unity using Guid(42ae40064f906f149a05bd8f83a14364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1161cc5c5dfc73a3916bacc182b8700a') in 0.002959 seconds
+  Import took 0.007407 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002384 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in C:\Users\DMC CONET\Documents\GitHub\VillainOst\fgfdjkglg\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in C:\Users\DMC CONET\Documents\GitHub\VillainOst\fgfdjkglg\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: C:/Users/DMC CONET/Documents/GitHub/VillainOst/fgfdjkglg/Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.856 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589830) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.67 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2014 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 208.0 MB.
+System memory in use after: 208.1 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2674.
+Total: 2.263600 ms (FindLiveObjects: 0.258300 ms CreateObjectMapping: 0.072600 ms MarkObjects: 1.916400 ms  DeleteObjects: 0.015500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
